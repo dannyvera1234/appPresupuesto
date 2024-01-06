@@ -1,0 +1,31 @@
+<div nz-row>
+  <div nz-col nzSpan="24">
+    <app-header
+    [presupestoTotal]="getPresupuestoTotal()"
+    [egresoTotal]="getEgresoTotal()"
+    [ingresoTotal]="getIngresoTotal()"
+    [porcentajeTotal]="getProcentajeTotal()"
+    ></app-header>
+  </div>
+</div>
+
+<div nz-row>
+  <div nz-col nzSpan="24">
+    <app-formulario></app-formulario>
+  </div>
+</div>
+<div nz-row>
+  <div nz-col nzSpan="10" nzOffset="2">
+    <app-ingresos></app-ingresos>
+  </div>
+  <div nz-col nzSpan="11" nzOffset="1">
+    <app-engresos
+    [ingresoTotal]="getIngresoTotal()"
+    ></app-engresos>
+  </div>
+</div>
+<div nz-row>
+  <div nz-col nzSpan="24">
+    <app-footer></app-footer>
+  </div>
+</div>
